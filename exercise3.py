@@ -128,6 +128,7 @@ def people_Sort():
     print(people_list)
 
 
+
 def num_generator(n):
     # n = input("请输入数值范围的上限：")
     i = 0
