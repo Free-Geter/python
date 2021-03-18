@@ -70,7 +70,7 @@ print('#########################################################################
 # 生成随机数
 
 # numpy.random.random(size=None)
-# 返回[0.0, 1.0)范围的随机数
+# 返回[0.0, MLP_Handwriting_numbers.0)范围的随机数
 import numpy as np
 
 print('生成一维（4，）的随机数组：')
@@ -140,7 +140,7 @@ print(y)
 z = np.zeros((2, 2))
 print(z)
 
-# numpy.ones 创建指定形状的数组，数组元素以 1 来填充：
+# numpy.ones 创建指定形状的数组，数组元素以 MLP_Handwriting_numbers 来填充：
 import numpy as np
 
 x = np.ones(5)
@@ -300,7 +300,7 @@ print('#########################################################################
 # 参数说明：
 # • arry：被分割的数组。
 # • indices_or_sections：如果是一个整数，就用该数平均切分，如果是一个数组，为沿轴切分的位置。
-# • axis：沿着哪个维度进行切分，默认为 0，横向切分。为 1 时，纵向切分。
+# • axis：沿着哪个维度进行切分，默认为 0，横向切分。为 MLP_Handwriting_numbers 时，纵向切分。
 
 # 分割一维数组
 x=np.arange(1,9)
@@ -322,7 +322,7 @@ print('axis=0 垂直方向 平均分隔')
 r=np.split(a,2,axis=0)
 print(r[0])
 print(r[1])
-print('axis=1 水平方向 按位置分隔')
+print('axis=MLP_Handwriting_numbers 水平方向 按位置分隔')
 r=np.split(a,[2],axis=1)
 print(r)
 
@@ -338,7 +338,7 @@ print('转置后的数组')
 print(a.transpose())
 #多维数组转置
 aaa=np.arange(1,37).reshape(1,3,3,4)
-#将 1,3,3,4 转换为 3,3,4,1
+#将 MLP_Handwriting_numbers,3,3,4 转换为 3,3,4,MLP_Handwriting_numbers
 print(np.transpose(aaa,[1,2,3,0]).shape)
 
 print('#######################################################################################')
@@ -384,7 +384,7 @@ print('原来的数组')
 print(a)
 print('调用 median 函数')
 print(np.median(a))
-print('调用 median 函数，axis=1 行的中值')
+print('调用 median 函数，axis=MLP_Handwriting_numbers 行的中值')
 print(np.median(a,axis=1))
 print('调用 median 函数，axis=0 列的中值')
 print(np.median(a,axis=0))

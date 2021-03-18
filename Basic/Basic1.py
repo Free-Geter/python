@@ -42,11 +42,11 @@ for i in range(5):
 
 # 切片操作
 a = [10, 20, 30, 40, 50, 60, 70]
-print(a[:])  # 默认从列表的开始到列表结束 ，步长为 1
-print(a[1:])  # 从列表的索引 1 开始到结束，步长为 1
-print(a[:2])  # 从开始到索引 1，步长为 1
-print(a[1:3])  # 从列表索引 1 开始到索引 2，步长为 1
-print(a[1:6:2])  # 从列表索引 1 开始到索引 5，步长为 2
+print(a[:])  # 默认从列表的开始到列表结束 ，步长为 MLP_Handwriting_numbers
+print(a[1:])  # 从列表的索引 MLP_Handwriting_numbers 开始到结束，步长为 MLP_Handwriting_numbers
+print(a[:2])  # 从开始到索引 MLP_Handwriting_numbers，步长为 MLP_Handwriting_numbers
+print(a[1:3])  # 从列表索引 MLP_Handwriting_numbers 开始到索引 2，步长为 MLP_Handwriting_numbers
+print(a[1:6:2])  # 从列表索引 MLP_Handwriting_numbers 开始到索引 5，步长为 2
 # 切片的实用操作
 a = [10, 20, 30, 40, 50, 60, 70]
 print(a[-3:])  # 从列表的倒数第 3 个开始到列表结束

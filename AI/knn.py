@@ -1,7 +1,7 @@
 # """
 # knn
 # 样本集
-# X = [[1,1],[1,1.5],[2,2],[4,3],[4,4]]
+# X = [[MLP_Handwriting_numbers,MLP_Handwriting_numbers],[MLP_Handwriting_numbers,MLP_Handwriting_numbers.5],[2,2],[4,3],[4,4]]
 # Y =['A','A','A','B','B']
 # 测试样本:
 # t=[3,2] 属于哪个类型
@@ -14,13 +14,13 @@
 # import operator
 # import matplotlib.pyplot as plt
 #
-# X = np.array([[1, 1], [1, 1.5], [2, 2], [4, 3], [4, 4]])
+# X = np.array([[MLP_Handwriting_numbers, MLP_Handwriting_numbers], [MLP_Handwriting_numbers, MLP_Handwriting_numbers.5], [2, 2], [4, 3], [4, 4]])
 # Y = np.array(['A', 'A', 'A', 'B', 'B'])
 #
 #
 # #画散点图
-# pltXy = np.split(X, [1], axis=1)
-# plt.scatter(pltXy[0], pltXy[1])
+# pltXy = np.split(X, [MLP_Handwriting_numbers], axis=MLP_Handwriting_numbers)
+# plt.scatter(pltXy[0], pltXy[MLP_Handwriting_numbers])
 # plt.show()
 #
 #
@@ -32,16 +32,16 @@
 #     :param testSample: 待测试样本
 #     :return: 返回待测试样本类别
 #     """
-#     # 1.求待测试样本和所有训练样本之间的距离
-#     dist = np.sum((X - testSample) ** 2, axis=1) ** 0.5
+#     # MLP_Handwriting_numbers.求待测试样本和所有训练样本之间的距离
+#     dist = np.sum((X - testSample) ** 2, axis=MLP_Handwriting_numbers) ** 0.5
 #     # 2.距离排序
 #     sort_dist = np.argsort(dist)
 #     # 3.统计距离最近得k个样本的类别的个数
 #     class_count = {}
 #     for dist_index in sort_dist[:k]:
 #         label = Y[dist_index]
-#         class_count[label] = class_count.get(label, 0) + 1
-#     return sorted(class_count.items(), key=operator.itemgetter(1), reverse=True)[0][0]
+#         class_count[label] = class_count.get(label, 0) + MLP_Handwriting_numbers
+#     return sorted(class_count.items(), key=operator.itemgetter(MLP_Handwriting_numbers), reverse=True)[0][0]
 #
 #
 # class point:
@@ -74,21 +74,21 @@
 #
 #
 # def knn_class(k=3, test=[3, 2]):
-#     X = np.array([[1, 1], [1, 1.5], [2, 2], [4, 3], [4, 4]])
+#     X = np.array([[MLP_Handwriting_numbers, MLP_Handwriting_numbers], [MLP_Handwriting_numbers, MLP_Handwriting_numbers.5], [2, 2], [4, 3], [4, 4]])
 #     Y = np.array(['A', 'A', 'A', 'B', 'B'])
 #     point_list = []
 #     dist_list = []
-#     test_point = point(test[0], test[1])
+#     test_point = point(test[0], test[MLP_Handwriting_numbers])
 #     for i in range(len(X)):
-#         temp = point(X[i][0], X[i][1], Y[i])
+#         temp = point(X[i][0], X[i][MLP_Handwriting_numbers], Y[i])
 #         point_list.append(temp)
 #         dist_list.append(temp.dist(test_point))
 #     list = sorted(point_list)
 #     class_count = {}
 #     for i in range(k):
 #         label = list[i].price
-#         class_count[label] = class_count.get(label,0) + 1
-#     return sorted(class_count.items(), key=operator.itemgetter(1), reverse=True)[0][0]
+#         class_count[label] = class_count.get(label,0) + MLP_Handwriting_numbers
+#     return sorted(class_count.items(), key=operator.itemgetter(MLP_Handwriting_numbers), reverse=True)[0][0]
 #
 #
 #

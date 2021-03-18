@@ -65,7 +65,7 @@ import numpy as np
 
 # 将画布分为区域，将图画到画布的指定区域
 x = np.linspace(1, 10, 100)
-# 将画布分为 2 行 2 列，将图画到画布的 1 区域
+# 将画布分为 2 行 2 列，将图画到画布的 MLP_Handwriting_numbers 区域
 plt.subplot(2, 2, 1)
 plt.plot(x, np.sin(x))
 plt.subplot(2, 2, 3)
@@ -159,7 +159,7 @@ real_names = ['千与千寻', '玩具总动员 4', '黑衣人：全球追缉']
 real_num1 = [5453, 7548, 6543]
 real_num2 = [1840, 4013, 3421]
 real_num3 = [1080, 1673, 2342]
-# 生成 x 第 1 天 第 2 天 第 3 天
+# 生成 x 第 MLP_Handwriting_numbers 天 第 2 天 第 3 天
 x = np.arange(len(real_names))
 x_label = ['第{}天'.format(i + 1) for i in range(len(real_names))]
 # 绘制柱状图

@@ -56,41 +56,41 @@ def question7():
 #     len1 = len(str(str1))
 #     len2 = len(str(str2))
 #     length = min(len1,len2)
-#     i = 1
+#     i = MLP_Handwriting_numbers
 #     while i <= length:
 #         num1 = int(int1 / math.pow(10,(len1 - i)))
 #         num2 = int(int2 / math.pow(10,(len2 - i)))
 #         if  num1 > num2:
-#             return 1
+#             return MLP_Handwriting_numbers
 #         elif num1 < num2:
-#             return -1
+#             return -MLP_Handwriting_numbers
 #         else:
 #             int1 %= math.pow(10,len1-i)
 #             int2 %= math.pow(10,len2-i)
-#             i += 1
+#             i += MLP_Handwriting_numbers
 #             if i > length:
 #                 if len1 > len2:
 #                     if int(int1 / math.pow(10,(len1 - i))) > num2:
-#                         return 1
+#                         return MLP_Handwriting_numbers
 #                     else:
-#                         return -1
+#                         return -MLP_Handwriting_numbers
 #                 elif len1 < len2:
 #                     if int(int2 / math.pow(10,(len2 - i))) > num1:
-#                         return -1
+#                         return -MLP_Handwriting_numbers
 #                     else:
-#                         return  1
+#                         return  MLP_Handwriting_numbers
 #     return 0
 #
 # my_list = sorted([3, 30, 34, 5, 9])
 # # sorted_list = sorted([str(num) for num in my_list], key=functools.cmp_to_key(compare))
-# for i in range(len(my_list)-1):
+# for i in range(len(my_list)-MLP_Handwriting_numbers):
 #     for j in range(i,len(my_list)):
-#         if  compare(my_list[i],my_list[j]) == -1:
+#         if  compare(my_list[i],my_list[j]) == -MLP_Handwriting_numbers:
 #             my_list[i],my_list[j] = my_list[j],my_list[i]
-#             j += 1
+#             j += MLP_Handwriting_numbers
 #         else:
-#             j += 1
-#     i += 1
+#             j += MLP_Handwriting_numbers
+#     i += MLP_Handwriting_numbers
 #
 # print(my_list)
 #

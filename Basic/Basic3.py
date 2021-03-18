@@ -40,7 +40,7 @@ print('#########################################################################
 # 元组的基本增删改查操作
 
 # 元组的创建
-# 1.通过()创建元组，小括号可以省略。（注意：若元组只有一个元素，需要在该元素后面添加','）
+# MLP_Handwriting_numbers.通过()创建元组，小括号可以省略。（注意：若元组只有一个元素，需要在该元素后面添加','）
 test = (1)
 print(type(test))  # 此时test的类型为int
 test_tuple = 1,
@@ -63,7 +63,7 @@ print('#########################################################################
 # 元组的增删改查
 
 # 元组是只读的，无法对内容进行修改
-# test_tuple[1]=10          # TypeError: 'tuple' object does not support item assignment
+# test_tuple[MLP_Handwriting_numbers]=10          # TypeError: 'tuple' object does not support item assignment
 
 # 元组的切片
 test_tuple1 = test_tuple[:]
@@ -117,7 +117,7 @@ a = dict.fromkeys(['name', 'age', 'job'])
 print('值为空的字典 a:', a)
 
 # 字典的访问
-# 1.通过'键'获得‘值’
+# MLP_Handwriting_numbers.通过'键'获得‘值’
 a = {'name': 'gaoqi', 'age': 18, 'job': 'programmer'}
 print('name:', a['name'])
 print('age:', a['age'])

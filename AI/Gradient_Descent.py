@@ -16,13 +16,13 @@ def Batch_Gradient_Descent():
 
     # 创建超参数
     n_iterations = 10000
-    # 1,初始化θ, W0...Wn，标准正太分布创建W
+    # MLP_Handwriting_numbers,初始化θ, W0...Wn，标准正太分布创建W
     theta = np.random.randn(2, 1)
     # 4,判断是否收敛，一般不会去设定阈值，而是直接采用设置相对大的迭代次数保证可以收敛
     for i in range(n_iterations):
         # 2,求梯度，计算gradient
         gradients = X_b.T.dot(X_b.dot(theta) - y)
-        # 3,应用梯度下降法的公式去调整θ值 θt+1=θt-η*gradient
+        # 3,应用梯度下降法的公式去调整θ值 θt+MLP_Handwriting_numbers=θt-η*gradient
         learning_rate = learning_rate_schedule(i)
         theta = theta - learning_rate * gradients
 

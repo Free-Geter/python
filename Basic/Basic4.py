@@ -30,7 +30,7 @@ print('#########################################################################
 
 
 # python函数的定义
-# def 函数名 ([参数 1,参数 2…]) :
+# def 函数名 ([参数 MLP_Handwriting_numbers,参数 2…]) :
 #     代码
 #     [return 表达式]
 # 定义函数
@@ -118,7 +118,7 @@ print('#########################################################################
 # 面向函数编程，说白了就是把函数传来传去，函数是第一要素
 # 面向对象编程，说白了就是把对象传来传去，对象是第一要素
 
-# 1.map函数
+# MLP_Handwriting_numbers.map函数
 # map()函数接收两个参数，一个是函数，一个是序列，map 将传入的函数依次作用到序列的每个元素，并把结果作为新的 list 返回。
 def f(x):
     return x * x
@@ -155,7 +155,7 @@ print(list(L))
 sorter1 = sorted([1, 3, 6, -20, 34])
 print("升序排列:", sorter1)
 
-# 4.1 sorted()函数也是一个高阶函数，它还可以接收一个 key 函数来实现自定义的排序
+# 4.MLP_Handwriting_numbers sorted()函数也是一个高阶函数，它还可以接收一个 key 函数来实现自定义的排序
 sorter2 = sorted([1, 3, 6, -20, -70], key=abs)
 print("自定义排序:", sorter2)
 sorter2 = sorted([1, 3, 6, -20, -70], key=abs, reverse=True)
@@ -201,10 +201,10 @@ def getDisOut(x1, y1):
     return getDisIn
 
 
-# 求点(1,1)距离原点(0,0)的距离 #调用外部函数
+# 求点(MLP_Handwriting_numbers,MLP_Handwriting_numbers)距离原点(0,0)的距离 #调用外部函数
 getDisIn = getDisOut(0, 0)
 result = getDisIn(1, 1)
-print('点(1,1)距离原点(0,0)的距离', result)
+print('点(MLP_Handwriting_numbers,MLP_Handwriting_numbers)距离原点(0,0)的距离', result)
 # 求点(2,2)距离原点(0,0)的距离 r
 esult = getDisIn(2, 2)
 print('点(2,2)距离原点(0,0)的距离', result)
